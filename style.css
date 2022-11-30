@@ -8,7 +8,7 @@
 --input-color: #80868B;
 --border-color: #DADCE0;
 /* TIPOGRAFIYA */
---body-font: 'Roboto', sans-serif;
+--body-font: sans-serif;
 --normal-font-size: 1rem;
 --small-font-size: .75rem;
 }
@@ -54,7 +54,7 @@ h1{
     top: 0;
     left: 0;
     width: 90%;
-    height: 20%;
+    height: 45%;
     font-size: var(--normal-font-size);
     border: 2px solid var(--border-color);
     border-radius: .5rem;
@@ -65,10 +65,10 @@ h1{
 }
 .form__label{
     position: absolute;
-    left: -20rem;
+    left: 1rem;
     top: 1rem;
-    padding: 0 25rem;
-    /* background-color: #fff; */
+    padding: 0 0.25rem;
+    background-color: #fff;
     color: var(--input-color);
     font-size: var(--normal-font-size);
     transition: .3s;
@@ -93,6 +93,7 @@ h1{
 /* INPUT FOCUS MOVE UP LABEL */
 .form__input:focus + .form__label{
     top: -.5rem;
+    left: .8rem;
     color: var(--first-color);
     font-size: var(--small-font-size);
     font-weight: 500;
